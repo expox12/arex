@@ -1,0 +1,26 @@
+<section>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">address</th>
+                <th scope="col">price</th>
+                <th scope="col">type</th>
+                <th scope="col">dueDate</th>
+                <th scope="col">fav</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="deal of dealList">
+                <th scope="row">{{deal.id}}</th>
+                <td>{{deal.name}}</td>
+                <td>{{deal.address}}</td>
+                <td>{{deal.price}}</td>
+                <td>{{deal.type}}</td>
+                <td>{{deal.dueDate}}</td>
+                <td>{{deal.fav}}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
